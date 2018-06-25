@@ -74,5 +74,6 @@ def convert(snippet, phrase):
                 print(question)
                 input("> ")
                 print(f"ANSWER: {answer}\n\n")
-except E0FError:
-    print ("\nBye")
+
+    except EOFError:
+         print ("\nBye")
