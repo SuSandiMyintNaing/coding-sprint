@@ -24,7 +24,7 @@ PHRASES = {
 #do they want to drill phrases first
 
 if len(sys.argv) == 2 and sys.argv[1] == "english":
-    PHRASE_FIRST == True 
+    PHRASE_FIRST = True
 else:
     PHRASE_FIRST = False
 
@@ -68,7 +68,7 @@ def convert(snippet, phrase):
             for snippet in snippets:
                 phrase = PHRASES[snippet]
                 question, answer = convert(snippet, phrase)
-                if PHRASEA_FIRST:
+                if PHRASE_FIRST:
                     question, answer = answer, question
                     
                 print(question)
